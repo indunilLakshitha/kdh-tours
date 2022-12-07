@@ -1,0 +1,133 @@
+.agreement-information-list {
+    // width: calc(100% - 340px) !important;
+    // margin: 95px 52px 0 auto !important;
+    width: calc(100% - 380px) !important;
+    margin: 95px 52px 50px 340px !important;
+    .page-container {
+        .page-title-area {
+            .search-form {
+                .btn {
+                    font-size: 14px;
+                    min-width: 172px;
+                }
+            }
+        }
+        .page-card {
+            padding: 0;
+            // height: calc(100vh - 270px);
+            // overflow-y: scroll;
+            // scrollbar-width: thin;
+            // scrollbar-color: $primary #e4f1fb;
+            // margin-bottom: 30px;
+            // Table styles
+            .table {
+                &.agreement-list {
+                    min-width: 1474px;
+                    width: 100%;
+                    thead {
+                        tr {
+                            th {
+                                font-size: 14px;
+                                line-height: 30px;
+                                padding: 0;
+                                border: 1px solid $page-card-border;
+                                &:nth-child(1) {
+                                    border-right: unset;
+                                }
+                                &:nth-child(2) {
+                                    padding: 0 10px 0 10px;
+                                    text-align: left;
+                                    border-left: unset;
+                                }
+                                &:nth-child(3) {
+                                    // width: 590px;
+                                }
+                                .icon-sort {
+                                    margin-left: 6px;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                border: 1px solid $page-card-border;
+                                text-align: center;
+                                &:nth-child(1) {
+                                    width: 75px;
+                                    width: 75px;
+                                    max-width: 75px;
+                                    padding: 0 3px;
+                                    border-right: unset;
+                                }
+                                &:nth-child(2) {
+                                    text-align: left;
+                                    width: 250px;
+                                    padding: 0 10px 0 20px;
+                                    border-left: unset;
+                                }
+                                &:nth-child(3) {
+                                    width: 120px;
+                                    padding: 0 10px;
+                                }
+                                &:nth-child(4) {
+                                    width: 160px;
+                                    padding: 0 10px;
+                                }
+                                &:nth-child(5) {
+                                    width: 270px;
+                                    padding: 0 10px;
+                                }
+                                &:nth-child(6) {
+                                    min-width: 256px;
+                                    padding: 12px 5px;
+                                    .date {
+                                        width: fit-content;
+                                        margin: 0 auto;
+                                        span {
+                                            display: block;
+                                            font-size: 14px;
+                                            text-align: left;
+                                        }
+                                    }
+                                }
+                                &:nth-child(7) {
+                                    width: 184px;
+                                    width: 180px;
+                                    max-width: 180px;
+                                    padding: 0;
+                                    .status {
+                                        width: 113px;
+                                        height: 38px;
+                                        font-size: 14px;
+                                        font-weight: $w6;
+                                        color: $white;
+                                        margin: 0 auto;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        &.not-use {
+                                            background-color: $secondary;
+                                        }
+                                        &.use {
+                                            background-color: $primary;
+                                        }
+                                    }
+                                }
+                                &:nth-child(8) {
+                                    width: 184px;
+                                    padding: 0 15px;
+                                    .btn-dark {
+                                        width: 130px;
+                                        height: 38px;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

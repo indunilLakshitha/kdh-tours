@@ -1,0 +1,38 @@
+@import 'variable.scss';
+
+// Layout
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/layout';
+@import 'layout/footer';
+
+// Components
+@import 'components/card';
+@import 'components/input';
+@import 'components/select';
+@import 'components/typography';
+@import 'components/button';
+@import 'components/step';
+@import 'components/checkbox';
+@import 'components/modal';
+@import 'components/table';
+@import 'components/alert';
+@import 'components/toast';
+@import 'components/tooltip';
+
+// Pages
+@import 'pages/login';
+@import 'pages/course';
+@import 'pages/video';
+@import 'pages/profile';
+@import 'pages/home';
+@import 'pages/category';
+@import 'pages/video_view';
+@import 'pages/mypage';
+@import 'pages/notice';
+@import 'pages/dashboard';
+@import 'pages/agreement_information_list';
+@import 'pages/workshop';
+@import 'pages/license_key';
+@import 'pages/favorite';
+@import 'pages/learning_path';

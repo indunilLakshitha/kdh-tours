@@ -1,0 +1,104 @@
+.profile {
+    margin: 131px 76px 109px auto !important;
+    .page-card {
+        padding: 39px 43px 51px 60px;
+        .form-area {
+            .form-group {
+                label {
+                    display: block;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+                .group-block {
+                    width: 100%;
+                }
+                .group-flex {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                }
+                .d-flex {
+                    display: flex;
+                }
+                .form-control {
+                    width: 100%;
+                    font-weight: $w3;
+                    padding-left: 24px;
+                }
+                .btn-secondary-outline {
+                    &.sml {
+                        min-width: 247px;
+                        margin-left: auto;
+                    }
+                }
+                .file-upload-wrapper {
+                    label {
+                        display: block;
+                        width: 100%;
+                        font-size: 18px;
+                        line-height: 27px;
+                        bottom: 25px;
+                    }
+                    .form-control {
+                        &.file-upload {
+                            width: 329px !important;
+                            height: 138px !important;
+                            background-size: 37px 50px;
+                            background-position: center 26px;
+                            padding-left: 0 !important;
+                        }
+                    }
+                }
+                .img-preview-wrapper {
+                    min-width: 128px;
+                    max-width: 128px;
+                    min-height: 128px;
+                    max-height: 128px;
+                    border-radius: 250px;
+                    margin-left: 20px;
+                    position: relative;
+                    .img-overflow {
+                        border: 2px solid $card-border;
+                        min-width: 128px;
+                        max-width: 128px;
+                        min-height: 128px;
+                        max-height: 128px;
+                        overflow: hidden;
+                        border-radius: 250px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            height: 128px;
+                            width: auto;
+                            max-width: initial;
+                            // &.landscape {
+                            //     height: 128px;
+                            //     width: auto;
+                            //     max-width: initial;
+                            // }
+                            // &.portrait {
+                            //     height: auto;
+                            //     width: 128px;
+                            //     max-width: initial;
+                            // }
+                        }
+                    }
+                    .btn-close {
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                        background-color: $input-disabled-bg;
+                        border-radius: 100%;
+                        transform: rotate(45deg);
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .btn-area {
+        margin: 43px 0 0 0 !important;
+    }
+}

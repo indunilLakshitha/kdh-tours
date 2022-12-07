@@ -1,0 +1,12 @@
+.alert {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: $w6;
+    &.danger {
+        background-color: rgba($pink, 0.5);
+        color: $error-text;
+        border: 1px solid $error-text;
+    }
+}

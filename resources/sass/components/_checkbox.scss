@@ -1,0 +1,17 @@
+.form-check {
+    width: 30px !important;
+    height: 30px !important;
+    color: $primary !important;
+    border-color: $input-border !important;
+    border-width: 2px !important;
+    &.sml {
+        width: 22px !important;
+        height: 22px !important;
+        border-width: 2px;
+        &:checked {
+            background-image: url('/public/images/icon-check.svg');
+            background-size: auto 11px;
+            color: $white !important;
+        }
+    }
+}

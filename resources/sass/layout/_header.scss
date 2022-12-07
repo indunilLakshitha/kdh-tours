@@ -1,0 +1,258 @@
+.header {
+    width: 100%;
+    padding: 18px 42px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    .logo {
+        height: 37px;
+    }
+    .admin-title {
+        font-family: 'alluraregular';
+        font-size: 24px;
+        line-height: 30px;
+        color: $primary;
+        margin: 0 0 0 14px;
+    }
+    &.admin-header {
+        height: 48px;
+        padding: 7px 21px 8px 18px;
+        background-color: $admin-header-bg;
+        position: fixed;
+        z-index: 999;
+        .logo {
+            height: 33px;
+        }
+        .btn-area {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            .logout {
+                width: 97px;
+                margin: 0 15px 0 0;
+            }
+            .account {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 19px;
+                    height: 19px;
+                    margin: 0 5px 0 0;
+                }
+                div {
+                    span {
+                        display: block;
+                        text-align: left;
+                    }
+                    small {
+                        display: block;
+                        text-align: left;
+                        font-size: 10px;
+                        line-height: 13px;
+                    }
+                }
+            }
+        }
+    }
+    &.user-header {
+        height: 64px;
+        padding: 7px 21px 8px 18px;
+        background-color: $admin-header-bg;
+        position: fixed;
+        z-index: 999;
+        .logo {
+            height: 37px;
+        }
+        .menu-area {
+            margin-left: 65px;
+            .menu-item {
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: $w6;
+                color: $white;
+                margin-right: 81px;
+                &:hover {
+                    opacity: 0.9;
+                }
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+            }
+        }
+        .btn-area {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            .logout {
+                width: 97px;
+                margin: 0 15px 0 0;
+            }
+            .account {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 19px;
+                    height: 19px;
+                    margin: 0 5px 0 0;
+                }
+                div {
+                    span {
+                        display: block;
+                        text-align: left;
+                    }
+                    small {
+                        display: block;
+                        text-align: left;
+                        font-size: 10px;
+                        line-height: 13px;
+                    }
+                }
+            }
+        }
+    }
+    &.video-watch {
+        position: fixed;
+        background-color: $admin-header-bg;
+        height: 64px;
+        padding: 0 25px 0 0;
+        z-index: 999;
+        .left-area {
+            display: flex;
+            align-items: center;
+            min-width: 375px;
+            max-width: 375px;
+            border-right: 1px solid $white;
+            padding: 0 16px 0 25px;
+            height: 64px;
+            .btn-link {
+                font-size: 18px;
+                line-height: 27px;
+                color: $white;
+                margin: 0;
+                &:hover {
+                    opacity: .8;
+                }
+                img {
+                    width: 24px;
+                    height: 23px;
+                }
+                &:nth-child(2) {
+                    margin-left: auto;
+                    img {
+                        width: 17px;
+                        height: 17px;
+                        margin: 0 0 0 14px;
+                    }
+                }
+            }
+        }
+        .right-area {
+            padding-left: 42.5px;
+            .title {
+                font-size: 20px;
+                font-weight: $w6;
+                color: $white;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-all;
+            }
+        }
+    }
+}
+// Responsive
+@media only screen and (max-width: 1400px) {
+    .header {
+        &.user-header {
+            height: 50px;
+            .logo {
+                min-width: 111px;
+                max-width: 111px;
+                height: 26px;
+            }
+            .menu-area {
+                .menu-item {
+                    font-size: 15px;
+                    margin-right: 60px;
+                }
+            }
+        }
+        &.video-watch {
+            height: 54px;
+            .left-area {
+                min-width: 325px;
+                max-width: 325px;
+                height: 54px;
+                .btn-link {
+                    font-size: 14px;
+                    line-height: 22px;
+                    &:nth-child(2) {
+                        img {
+                            width: 14px;
+                            height: 14px;
+                        }
+                    }
+                    img {
+                        width: 18px;
+                        height: 17px;
+                    }
+                }
+            }
+            .right-area {
+                .title {
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    // 
+}
+@media only screen and (max-width: 992px) {
+    .header {
+        &.video-watch {
+            .left-area {
+                min-width: 300px;
+                max-width: 300px;
+                .btn-link {
+                    font-size: 12px;
+                    line-height: 20px;
+                    &:nth-child(2) {
+                        img {
+                            width: 12px;
+                            height: 12px;
+                        }
+                    }
+                    img {
+                        width: 16px;
+                        height: 15px;
+                    }
+                }
+            }
+            .right-area {
+                padding-left: 22.5px;
+                .title {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header {
+        &.user-header {
+            .menu-area {
+                margin-left: 20px;
+                .menu-item {
+                    font-size: 12px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

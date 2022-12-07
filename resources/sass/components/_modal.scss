@@ -1,0 +1,201 @@
+.modal {
+    position: fixed;
+    z-index: 1000;
+    top: 30%;
+    left: 50%;
+    width: 480px;
+    margin-left: -240px;
+    &:before {
+        content: '';
+        background: rgba($black, 0.7);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+    }
+    .modal-content {
+        padding: 60px 40px 40px 40px;
+        border-radius: 10px;
+        background-color: $white;
+        box-shadow: 0 0 10px rgba($black, 0.2);
+        position: relative;
+        z-index: 99999;
+        .modal-close {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+        }
+        label {
+            margin: 0 0 15px 0 !important;
+            text-align: center;
+            font-weight: $w6;
+        }
+        .btn-primary {
+            margin-top: 20px;
+        }
+    }
+}
+
+//   Video list modal
+.add-video-modal {
+    width: 80%;
+    left: 10%;
+    top: 60px;
+    margin-left: 0;
+    height: calc(100vh - 120px);
+    overflow: scroll;
+    .modal-content {
+        .table {
+            border: 1px solid #ccc;
+            &.course-list {
+                width: 100%;
+                border-collapse: collapse;
+                thead {
+                    tr {
+                        height: 43px;
+                        border-bottom: 1px solid $page-card-border;
+                        th, td {
+                            font-size: 12px;
+                            line-height: 21px;
+                            font-weight: $w3;
+                            padding: 0 20px;
+                        }
+                        .icon-filter {
+                            display: inline-flex;
+                            align-items: center;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: $secondary;
+                            // cursor: pointer;
+                            img {
+                                margin: 0 17px 0 0;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        min-height: 125px;
+                        border-bottom: 1px solid $page-card-border;
+                        cursor: pointer;
+                        cursor: cell;
+                        &:hover {
+                            background-color: rgba($black, 0.035);
+                        }
+                        td {
+                            padding: 16px 10px;
+                            font-size: 12px;
+                            line-height: 24px;
+                            text-align: center;
+                            &:nth-child(1) {
+                                padding: 16px 30px;
+                                text-align: center;
+                            }
+                            &:nth-child(2) {
+                                img {
+                                    min-width: 167px;
+                                    max-width: 167px;
+                                    height: 93px;
+                                    margin: 0 auto;
+                                }
+                            }
+                            // &:nth-child(3) {
+                            //     padding: 16px 10px 16px 10px;
+                            //     text-align: center;
+                            //     min-width: 150px;
+                            // }
+                            &:nth-child(3) {
+                                border-right: 1px solid $page-card-border;
+                                .border-left {
+                                    border-left: 1px solid $page-card-border;
+                                    min-height: 93px;
+                                    padding-left: 45px;
+                                    padding-right: 35px;
+                                    padding-top: 20px;
+                                    p {
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        color: $black;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 2;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        text-align: left;
+                                        word-break: break-all;
+                                    }
+                                }
+                            }
+                            &:nth-child(5) {
+                                min-width: 140px;
+                                min-width: 140px;
+                                border-right: 1px solid $page-card-border;
+                                .btn-link {
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    font-weight: $w3;
+                                    color: $body-text;
+                                    width: 60px;
+                                    img {
+                                        margin-right: 8px;
+                                    }
+                                }
+                            }
+                            &:nth-child(6) {
+                                min-width: 140px;
+                                .btn-dark {
+                                    width: 73px;
+                                    height: 30px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mypage modal
+.mypage_video_modal {
+    width: 80%;
+    left: 0;
+    top: 8%;
+    margin-left: calc((100% - 80%) / 2);
+    .modal-content {
+        border-radius: 50px;
+        border: 20px solid $primary;
+        padding: 30px 40px 40px 40px;
+        // transform: scale(0.9);
+        .modal-close {
+            position: absolute;
+            top: -30px;
+            right: -30px;
+        }
+        .para {
+            font-size: 24px;
+            font-weight: $w6;
+            text-align: center;
+        }
+        .card-title {
+            font-size: 40px;
+            font-weight: $w6;
+            margin-top: 5px;
+            text-align: center;
+        }
+        .card-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            column-gap: 25px;
+            .card {
+                min-width: calc((100% - 200px) / 3);
+                max-width: calc((100% - 50px) / 3);
+                margin: 0;
+            }
+        }
+    }
+}

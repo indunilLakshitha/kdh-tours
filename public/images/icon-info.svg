@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="カテゴリー" transform="translate(1.003 1)">
+    <g id="Icon_feather-alert-circle" data-name="Icon feather-alert-circle" transform="translate(-0.003 0)">
+      <path id="Path_11" data-name="Path 11" d="M23,13A10,10,0,1,1,13,3,10,10,0,0,1,23,13Z" transform="translate(-3 -3)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_12" data-name="Path 12" d="M18,12v4" transform="translate(-8 -6)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_13" data-name="Path 13" d="M18,24h0" transform="translate(-8 -10)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

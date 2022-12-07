@@ -1,0 +1,1143 @@
+.workshop-create {
+    .page-title-area {
+        .search-form {
+            label {
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: $w3;
+                color: $body-text;
+                margin: 0 16px 0 0;
+                min-width: auto;
+                width: auto;
+            }
+            .form-select {
+                width: 216px;
+                height: 30px;
+                border: 2px solid $primary !important;
+                border-radius: 0 !important;
+                text-align: center;
+                padding: 0;
+                font-size: 12px;
+                background-size: 30px auto;
+            }
+        }
+    }
+    .page-card {
+        .form {
+            .form-group {
+                label {
+                    min-width: 180px;
+                    display: block;
+                    margin: 0 17px 0 0;
+                    span {
+                        display: block;
+                    }
+                }
+                .input-wrapper {
+                    width: 100%;
+                }
+                // Copied
+                .d-flex {
+                    display: flex;
+                }
+                .w-100 {
+                    width: 100%;
+                }
+                .w-420 {
+                    width: 420px;
+                }
+                .h-290 {
+                    height: 290px !important;
+                }
+                .h-270 {
+                    height: 270px !important;
+                }
+                .btn-link {
+                    margin: 0 0 0 13px;
+                    font-size: 14px;
+                    line-height: 21px;
+                    img {
+                        width: 29px;
+                        height: 29px;
+                    }
+                }
+                .img-preview-wrapper {
+                    width: auto;
+                    height: 103px;
+                    border: 2px solid $card-border;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    margin-left: 20px;
+                    position: relative;
+                    img {
+                        height: 100%;
+                    }
+                    .btn-close {
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                        background-color: $white;
+                        border-radius: 100%;
+                    }
+                }
+                .flex-column {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    .flex-row {
+                        display: flex;
+                        align-items: center;
+                    }
+                    .row-bordered {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        border-bottom: 1px solid $page-card-border;
+                        padding: 16px 16px;
+                        .label {
+                            font-size: 14px;
+                            line-height: 21px;
+                        }
+                        .icon-draggable {
+                            margin: 0 27px 0 0;
+                        }
+                        .thumb {
+                            width: 117px;
+                            height: 65px;
+                            margin: 0 27px 0 0;
+                        }
+                        p {
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: $black;
+                            &.char-count {
+                                margin: auto 0 0 7px;
+                                font-size: 12px;
+                                span {
+                                    color: $error-text;
+                                    font-weight: $w6;
+                                }
+                            }
+                            &.para {
+                                margin-right: 30px;
+                                font-size: 14px;
+                                line-height: 19px;
+                            }
+                        }
+                        small {
+                            font-size: 11px;
+                            line-height: 18px;
+                            color: $secondary;
+                            span {
+                                color: $body-text;
+                                margin-left: 20px;
+                            }
+                        }
+                        .icon-close {
+                            margin-left: auto;
+                            cursor: pointer;
+                        }
+                        .icon-plus {
+                            margin-left: 15px;
+                            width: 29px;
+                            height: 29px;
+                        }
+                        textarea {
+                            font-size: 14px;
+                            line-height: 21px;
+                        }
+                        .upload-flex {
+                            display: flex;
+                            align-items: center;
+                            .file-upload-wrapper {
+                                margin-left: 20px;
+                                position: relative;
+                                .file-upload {
+                                    width: 360px !important;
+                                    height: 60px !important;
+                                    background-position: 35px center;
+                                }
+                                label {
+                                    width: -moz-available;
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    margin-left: 84px !important;
+                                }
+                                .spinner-wrapper {
+                                    width: 100%;
+                                    height: 100%;
+                                    position: absolute;
+                                    .lds-dual-ring {
+                                        transform: scale(0.4);
+                                    }
+                                }
+                            }
+                        }
+                        .h-64 {
+                            height: 64px !important;
+                        }
+                        .h-158 {
+                            height: 158px !important;
+                            margin-top: 9px;
+                        }
+                        .w-680 {
+                            width: 680px;
+                        }
+                        .w-100 {
+                            width: 100%;
+                            margin-right: 20px;
+                        }
+                    }
+                    .link {
+                        font-size: 13px;
+                        line-height: 19px;
+                        font-weight: $w3;
+                        color: $primary;
+                        margin: 0 0 0 368px;
+                        width: fit-content;
+                    }
+                    .tag-area {
+                        margin: 13px 0 0 0;
+                    }
+                }
+            }
+            .sub-heading {
+                margin-top: 76px;
+            }
+            .align-item-fs {
+                align-items: baseline;
+            }
+            .align-item-flex-start {
+                align-items: flex-start !important;
+            }
+            .mt-3 {
+                margin-top: 30px !important;
+            }
+            .mb-0 {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+.workshop-participant-list {
+    margin-bottom: 50px !important;
+    .page-title-area {
+        .search-form {
+            .btn-dark, .btn-primary {
+                width: auto;
+                padding: 0 20px;
+            }
+        }
+    }
+    .page-card {
+        .table {
+            &.workshop-table {
+                width: 1411px;
+                thead {
+                    tr {
+                        border: 1px solid $page-card-border;
+                        th {
+                            &:nth-child(4) {
+                                text-align: left;
+                                padding-left: 70px;
+                            }
+                            &:nth-child(5) {
+                                text-align: left;
+                                padding-left: 70px;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            border: 1px solid $page-card-border;
+                            font-size: 14px;
+                            word-break: break-all;
+                            &:nth-child(1) {
+                                width: 72px;
+                                text-align: center;
+                            }
+                            &:nth-child(2) {
+                                width: 155px;
+                                text-align: center;
+                            }
+                            &:nth-child(3) {
+                                width: 150px;
+                                text-align: center;
+                                border-right: unset;
+                            }
+                            &:nth-child(4) {
+                                width: 200px;
+                                text-align: center;
+                                border-right: unset;
+                                border-left: unset;
+                            }
+                            &:nth-child(5) {
+                                width: 400px;
+                                border-left: unset;
+                                .d-block {
+                                    display: block;
+                                    span {
+                                        display: block;
+                                    }
+                                    small {
+                                        display: block;
+                                    }
+                                }
+                            }
+                            &:nth-child(6) {
+                                width: auto;
+                                padding-left: 40px;
+                                .d-flex {
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 16px;
+                                    img {
+                                        margin: 0 16px 0 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.workshop-list {
+    .page-title-area {
+        .search-form {
+            .btn-primary {
+                width: 142px;
+            }
+        }
+    }
+    .page-card {
+        padding: 0;
+        margin-bottom: 68px;
+        // Course list table
+        .table {
+            &.workshop-table {
+                width: 100%;
+                border-collapse: collapse;
+                thead {
+                    tr {
+                        height: 43px;
+                        border-bottom: 1px solid $page-card-border;
+                        th, td {
+                            font-size: 12px;
+                            line-height: 21px;
+                            font-weight: $w3;
+                            padding: 0 20px;
+                            .icon-sort {
+                                margin-left: 8px;
+                            }
+                        }
+                        .icon-filter {
+                            display: inline-flex;
+                            align-items: center;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: $secondary;
+                            // cursor: pointer;
+                            img {
+                                margin: 0 17px 0 0;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        min-height: 125px;
+                        border-bottom: 1px solid $page-card-border;
+                        td {
+                            padding: 16px 10px;
+                            font-size: 12px;
+                            line-height: 24px;
+                            text-align: center;
+                            &:nth-child(1) {
+                                width: 132px;
+                            }
+                            &:nth-child(2) {
+                                width: 120px;
+                                .status {
+                                    min-width: 93px;
+                                    height: 33px;
+                                    font-size: 12px;
+                                    color: $white;
+                                    font-weight: $w6;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    &.accept {
+                                        background-color: $primary;
+                                    }
+                                    &.end {
+                                        background-color: $secondary;
+                                    }
+                                }
+                            }
+                            &:nth-child(3) {
+                                padding: 0 30px;
+                                img {
+                                    min-width: 167px;
+                                    max-width: 167px;
+                                    height: 93px;
+                                }
+                            }
+                            &:nth-child(4) {
+                                padding: 16px 10px 16px 0px;
+                                border-right: 1px solid $page-card-border;
+                                .border-left {
+                                    border-left: 1px solid $page-card-border;
+                                    min-height: 93px;
+                                    padding-left: 45px;
+                                    padding-right: 35px;
+                                    display: flex;
+                                    align-items: center;
+                                    p {
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        color: $black;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 2;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        text-align: left;
+                                        word-break: break-word;
+                                    }
+                                }
+                            }
+                            &:nth-child(5) {
+                                width: 140px;
+                                padding: 0 10px;
+                                .btn-link {
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    font-weight: $w3;
+                                    color: $body-text;
+                                    width: 80px;
+                                    cursor: default;
+                                    img {
+                                        margin-right: 8px;
+                                    }
+                                }
+                            }
+                            &:nth-child(6) {
+                                width: 200px;
+                                border-right: 1px solid $page-card-border;
+                                font-size: 14px;
+                                div {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    .btn-primary-outline {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 75px;
+                                        height: 29px;
+                                        font-size: 12px;
+                                        border: 1px solid $primary;
+                                        border-radius: 10px;
+                                        padding: 0;
+                                        margin: 0 0 0 18px;
+                                        img {
+                                            margin: 0 5px 0 0;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(7) {
+                                min-width: 130px;
+                                .btn-dark {
+                                    width: 73px;
+                                    height: 30px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// User workshop list
+.user-workshop-list {
+    margin-bottom: 61px !important;
+    .page-container {
+        max-width: 1411px !important;
+        width: 100% !important;
+        .section-video {
+            .title-area {
+                h3 {
+                    font-size: 26px;
+                    margin-bottom: 16px;
+                }
+            }
+            .card-row {
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 45px;
+                row-gap: 65px;
+                .card {
+                    &.video-card {
+                        width: calc((100% - 90px) / 3);
+                        max-width: calc((100% - 90px) / 3);
+                        margin: 0;
+                        background-color: unset;
+                        box-shadow: unset;
+                        border: unset;
+                        .video-thumb-wrapper {
+                            width: 100%;
+                            height: 230px;
+                            border-radius: 10px;
+                            .thumb {
+                                width: 100%;
+                            }
+                            &.watched {
+                                position: relative;
+                                &:after {
+                                    content: '受付終了';
+                                    position: absolute;
+                                    width: 148px;
+                                    height: 39px;
+                                    background-color: $black;
+                                    font-size: 18px;
+                                    font-weight: $w6;
+                                    color: $white;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    top: 15px;
+                                    left: 0;
+                                }
+                                &:before {
+                                    content: '試聴済み';
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: rgba($white, 0.5);
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 27px;
+                                }
+                            }
+                            &.applied {
+                                position: relative;
+                                &:after {
+                                    content: '申し込み終了';
+                                    position: absolute;
+                                    width: 148px;
+                                    height: 39px;
+                                    background-color: $black;
+                                    font-size: 18px;
+                                    font-weight: $w6;
+                                    color: $white;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    top: 15px;
+                                    left: 0;
+                                }
+                               
+                            }
+                            &.expected {
+                                position: relative;
+                                &:after {
+                                    content: '参加希望';
+                                    position: absolute;
+                                    width: 148px;
+                                    height: 39px;
+                                    background-color: $black;
+                                    font-size: 18px;
+                                    font-weight: $w6;
+                                    color: $white;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    top: 15px;
+                                    left: 0;
+                                }
+                               
+                            }
+                            &.expired-or-full {
+                                position: relative;
+                                &:after {
+                                    content: '受付終了';
+                                    position: absolute;
+                                    width: 148px;
+                                    height: 39px;
+                                    background-color: $black;
+                                    font-size: 18px;
+                                    font-weight: $w6;
+                                    color: $white;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    top: 15px;
+                                    left: 0;
+                                }
+                               
+                            }
+                            
+                            &.date-passed {
+                                position: relative;
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    background-color: rgba($black, 0.5);
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .card-content {
+                            padding: 13px 9px 9px 9px;
+                            .info-area {
+                                margin: 0;
+                                .left-col {
+                                    min-width: 70px;
+                                    margin: 0 30px 0 0;
+                                    small {
+                                        display: block;
+                                        font-size: 14px;
+                                        font-weight: $w3;
+                                        text-align: center;
+                                    }
+                                    span {
+                                        display: block;
+                                        font-size: 45px;
+                                        line-height: 45px;
+                                        font-weight: $w3;
+                                        text-align: center;
+                                    }
+                                }
+                                .right-col {
+                                    p {
+                                        font-size: 24px;
+                                        line-height: 33px;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 2;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        word-break: break-word;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// User workshop details
+.workshop-details, .workshop-complete, .workshop-apply, .workshop-submit {
+    .video-area {
+        background-color: $white;
+        padding: 52px 0 98px 0;
+        .page-container {
+            margin: 0 auto 0 auto !important;
+            .video-title {
+                font-size: 38px;
+                line-height: 57px;
+                text-align: center;
+                word-break: break-word;
+            }
+            .video-info-area {
+                margin-top: 61px;
+                padding: 0 calc(137px / 2) 0 calc(137px / 2);
+                display: flex;
+                align-items: center;
+                .video {
+                    width: 538px;
+                    height: 299px;
+                    margin: 0 56px 0 0;
+                }
+                .info-area {
+                    width: calc(100% - (538px + 56px));
+                    margin-left: auto;
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        li {
+                            display: flex;
+                            align-items: flex-start;
+                            font-size: 18px;
+                            line-height: normal;
+                            font-weight: $w3;
+                            margin-bottom: 20px;
+                            word-break: break-word;
+                            label {
+                                min-width: 145px;
+                                margin: 0 20px 0 0;
+                                font-size: 18px;
+                                img {
+                                    width: 18.5px;
+                                    height: 18.5px;
+                                    margin: 0 20px 0 0;
+                                }
+                            }
+                            .info {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .btn-row {
+                        display: flex;
+                        margin-top: 42px;
+                        .btn-primary, .btn-secondary {
+                            width: 247px;
+                            height: 84px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 30px 0 0;
+                            font-size: 24px;
+                            img {
+                                width: 26px;
+                                margin-left: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .page-container {
+        margin: 60px auto 0 auto !important;
+        h2 {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+            font-size: 28px;
+            line-height: 42px;
+            font-weight: $w6;
+            color: $admin-header-bg;
+            text-align: center;
+            // border-bottom: 4px solid $title-underline;
+            padding: 0 32px;
+            width: auto;
+            // display: table;
+            margin: 0 auto;
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 120px;
+                height: 4px;
+                background-color: $title-underline;
+                bottom: -7px;
+            }
+        }
+        .description-para {
+            font-size: 18px;
+            line-height: 40px;
+            font-weight: $w3;
+            margin: 38px 0 104px 0;
+            word-break: break-word;
+        }
+        .card-white {
+            background-color: $white;
+            padding: 61px 70px 62px 70px;
+            margin: 27px 0 108px 0;
+            .para {
+                font-size: 20px;
+                line-height: 40px;
+                font-weight: $w6;
+                word-break: break-word;
+            }
+        }
+        .border-box {
+            border: 2px solid $box-border;
+            padding: 36px 70px 44px 70px;
+            .description-para {
+                margin-bottom: 0;
+            }
+        }
+        .center-para {
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            margin: 56px 0 0 0;
+            word-break: break-word;
+        }
+        .btn-area {
+            margin: 23px 0 91px 0;
+            .btn-primary {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 247px;
+                height: 84px;
+                font-size: 24px;
+                img {
+                    margin: 0 0 0 23px;
+                    width: 26px;
+                }
+            }
+        }
+    }
+}
+// User workshop complete
+.workshop-complete, .workshop-apply, .workshop-submit {
+    background-color: $white;
+    .hero-text-area {
+        width: 100%;
+        min-height: 153px;
+        background-color: $primary;
+        padding: 33px calc((100% - 1411px) / 2) 40px calc((100% - 1411px) / 2);
+        .hero-text {
+            font-size: 26px;
+            line-height: 39px;
+            font-weight: $w6;
+            color: $white;
+            text-align: center;
+        }
+    }
+    .video-area {
+        padding: 51px 0 47px 0;
+        .page-container {
+            .video-info-area {
+                align-items: flex-start;
+                margin: 0;
+                padding: 0;
+                .video {
+                    width: 681px;
+                    height: 378px;
+                }
+                .info-area {
+                    .video-title {
+                        font-size: 30px;
+                        line-height: 46px;
+                        text-align: left;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    ul {
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .page-container {
+        margin: 0 auto 0 auto !important;
+        h2 {
+            font-size: 26px;
+            line-height: 39px;
+        }
+        .info-box {
+            background-color: $input-disabled-bg;
+            border: 1px solid $primary;
+            margin: 38.5px 0 0 0;
+            .info-box-header {
+                width: 100%;
+                height: 69px;
+                padding: 0 40px;
+                background-color: $primary;
+                color: $white;
+                font-size: 22px;
+                font-weight: $w6;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .info-box-body {
+                // width: 1100px;
+                padding: 58px 0 74px 0;
+                margin: 0 auto;
+                .info-box-title {
+                    font-size: 24px;
+                    line-height: 36px;
+                    font-weight: $w6;
+                    margin-bottom: 15px;
+                }
+                .section-video {
+                    padding-bottom: 50px;
+                    margin-bottom: 47px;
+                    border-bottom: 1px solid $box-border;
+                    .card-row {
+                        display: flex;
+                    }
+                }
+                .form-section {
+                    &.mb-40{
+                        margin-bottom: 40px;
+                        border-bottom: 1px solid $box-border;
+                        padding-bottom: 40px;
+                    }
+                    p {
+                        font-size: 18px;
+                        line-height: 30px;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .download-row {
+                        display: flex;
+                        align-items: center;
+                        min-height: 78px;
+                        border-radius: 20px;
+                        background-color: $white;
+                        border: 3px solid $page-card-border;
+                        margin: 17px auto 66px auto;
+                        padding: 0 41px 0 41px;
+                        .title {
+                            min-width: 190px;
+                            margin-right: 50px;
+                            font-size: 18px;
+                            line-height: 30px;
+                            &.centered {
+                                text-align: center;
+                                margin: 0 auto;
+                            }
+                        }
+                        .description {
+                            font-size: 22px;
+                            line-height: 33px;
+                            margin-right: 160px;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        img {
+                            margin-left: auto;
+                            cursor: pointer;
+                            width: 22px;
+                        }
+                    }
+                    .form-group {
+                        margin-bottom: 29px;
+                        .file-upload-wrapper {
+                            background-color: $white;
+                            border-radius: 10px;
+                            .form-control {
+                                &.file-upload {
+                                    width: 329px !important;
+                                    height: 138px !important;
+                                    background-position: center 26px;
+                                    background-size: 37px 50px;
+                                }
+                            }
+                            label {
+                                width: 100%;
+                                bottom: 25px;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .title-closable {
+                        width: 100%;
+                        min-height: 78px;
+                        background-color: $white;
+                        border: 3px solid $page-card-border;
+                        border-radius: 20px;
+                        display: flex;
+                        align-items: center;
+                        padding: 0 25px 0 41px;
+                        margin: 0px 0 0 0;
+                        .btn-close {
+                            cursor: pointer;
+                            width: 30px;
+                            height: 30px;
+                            margin-left: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .center-para {
+            font-size: 16px;
+            line-height: 24px;
+            color: $error-text;
+        }
+        .btn-area {
+            .btn-primary {
+                min-width: 319px;
+            }
+        }
+    }
+}
+// User workshop complete
+.workshop-apply, .workshop-submit {
+    .video-area {
+        .page-container {
+            .video-title {
+                padding-bottom: 50px;
+            }
+            .video-info-area {
+                width: 1080px;
+                margin: 0 auto;
+                .video {
+                    width: 538px;
+                    height: 299px;
+                }
+                .info-area {
+                    ul {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .page-container {
+        width: 100% !important;
+        .info-box {
+            width: 100%;
+            border: unset;
+        }
+        .details-section {
+            background-color: $body-bg;
+            .container {
+                max-width: 1411px !important;
+                width: 100%;
+                margin: 0 auto;
+                padding: 40px 0 133px 0;
+                .description-para {
+                    font-size: 18px;
+                    line-height: 40px;
+                    font-weight: $w3;
+                    margin: 38px 0 104px 0;
+                }
+                .card-white {
+                    background-color: $white;
+                    padding: 61px 70px 62px 70px;
+                    margin: 40px 0 108px 0;
+                    .para {
+                        font-size: 20px;
+                        line-height: 40px;
+                        font-weight: $w6;
+                    }
+                }
+                .border-box {
+                    border: 2px solid $box-border;
+                    padding: 36px 70px 44px 70px;
+                    .description-para {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+// HR Workshop edit
+.hr-workshop-edit {
+    width: calc(100% - 330px) !important;
+    margin: 90px 52px 0 auto !important;
+    padding-bottom: 40px;
+    .video-thumb-card {
+        border-radius: 0;
+        border-width: 1px;
+        width: 100%;
+        margin: 12px 0 20px 0;
+        &:nth-last-child(1) {
+            padding-bottom: 0;
+        }
+        .card-content {
+            padding: 20px 100px 20px 50px;
+            display: flex;
+            align-items: center;
+            .video-tuhmb {
+                width: 234px;
+                height: 130px;
+            }
+            .video-info {
+                margin-left: 70px;
+                .title {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    text-align: left;
+                    word-break: break-word;
+                }
+                .details-row {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    .details-single {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 45px;
+                        img {
+                            height: 15px;
+                        }
+                        span {
+                            font-size: 12px;
+                            margin-left: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .second-title {
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: $w3;
+    }
+    .page-card {
+        padding: 0;
+        .hr-workshop-edit-table {
+            width: 1474px;
+            thead {
+
+            }
+            tbody {
+                tr {
+                    border-bottom: 1px solid $page-card-border;
+                    &:nth-last-child(1) {
+                        border-bottom: unset;
+                    }
+                    td {
+                        text-align: center;
+                        border-right: 1px solid $page-card-border;
+                        &:nth-child(1) {
+                            width: 72px;
+                        }
+                        &:nth-child(2) {
+                            width: 200px;
+                        }
+                        &:nth-child(3) {
+                            width: 270px;
+                        }
+                        &:nth-child(4) {
+                            text-align: left;
+                            border-right: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Workshop report submit
+.workshop-submit {
+    .page-container {
+        .info-box {
+            .info-box-body {
+                .form-section {
+                    .download-row {
+                        margin: 30px 0 30px 0;
+                    }
+                }
+            }
+        }
+    }
+}

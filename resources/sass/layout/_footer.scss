@@ -1,0 +1,43 @@
+.footer {
+    height: 77px;
+    width: 100%;
+    background-color: $footer-bg;
+    border-top: 6px solid $footer-border;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: auto;
+}
+.admin-footer {
+    height: 48px;
+    width: 100%;
+    background-color: $admin-header-bg;
+    border-top: 4px solid $footer-border;
+    position: relative;
+    z-index: 999;
+}
+.user-footer {
+    height: 77px;
+    width: 100%;
+    background-color: $footer-bg;
+    border-top: 6px solid $footer-border;
+    position: relative;
+    z-index: 999;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+// Responsive
+@media only screen and (max-width: 1400px) {
+    .user-footer {
+        height: 50px;
+        border-top: 4px solid #A7212D;
+        font-size: 12px;
+    }
+}

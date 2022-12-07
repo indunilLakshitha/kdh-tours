@@ -1,0 +1,53 @@
+.step-area {
+    display: flex;
+    justify-content: space-between;
+    min-width: 315px;
+    width: max-content;
+    height: 68px;
+    margin: 43px auto 54px auto;
+    position: relative;
+    .step-single {
+        position: relative;
+        .circle {
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin: 8px auto 0 auto;
+            border-radius: 100px;
+            background-color: $input-border;
+        }
+        .step-label {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: $w6;
+            color: $step-color;
+            text-align: center;
+            display: block;
+            margin-top: 19px;
+        }
+        &.active {
+            .circle {
+                width: 40px;
+                height: 40px;
+                background-color: $primary;
+                margin: 0 auto 0 auto;
+                position: relative;
+                z-index: 2;
+            }
+            .step-label {
+                color: $body-text;
+                margin-top: 11px;
+            }
+        }
+    }
+    &:after {
+        content: '';
+        width: 242px;
+        height: 2px;
+        background-color: $input-border;
+        position: absolute;
+        top: 20px;
+        left: 54px;
+        z-index: 1;
+    }
+}

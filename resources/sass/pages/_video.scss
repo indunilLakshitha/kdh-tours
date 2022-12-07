@@ -1,0 +1,288 @@
+.video-register {
+    .form {
+        .form-group {
+            label {
+                display: block;
+                margin: 0 10px 0 0;
+                span {
+                    font-size: 12px;
+                    line-height: 18px;
+                    display: block;
+                }
+            }
+            .d-flex {
+                display: flex;
+            }
+            .w-420 {
+                width: 420px;
+            }
+            .mt-40 {
+                margin-top: -40px;
+            }
+            .btn-link {
+                margin: 0 0 0 13px;
+                font-size: 14px;
+                line-height: 21px;
+                img {
+                    width: 29px;
+                    height: 29px;
+                }
+            }
+            .helper-text {
+                color: $body-text;
+                margin-top: 16px;
+            }
+            .img-preview-wrapper {
+                width: auto;
+                height: 103px;
+                border: 2px solid $card-border;
+                border-radius: 10px;
+                overflow: hidden;
+                margin-left: 20px;
+                position: relative;
+                img {
+                    height: 100%;
+                }
+                .btn-close {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    background-color: $white;
+                    border-radius: 100%;
+                }
+            }
+            .flex-column {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .helper-text {
+                    margin: 16px 0 5px 0;
+                    font-weight: $w3;
+                }
+                .flex-row {
+                    display: flex;
+                    align-items: center;
+                }
+                .row-bordered {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    border-top: 1px solid $page-card-border;
+                    border-bottom: 1px solid $page-card-border;
+                    padding: 25px 16px 25px 30px;
+                    margin-top: 6px;
+                    .label {
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                    .icon-draggable {
+                        margin: 0 27px 0 0;
+                    }
+                    .thumb {
+                        width: 117px;
+                        height: 65px;
+                        margin: 0 27px 0 0;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: $black;
+                        &.char-count {
+                            margin: auto 0 0 7px;
+                        }
+                        &.para {
+                            margin-right: 30px;
+                            font-size: 14px;
+                            line-height: 19px;
+                        }
+                    }
+                    small {
+                        font-size: 11px;
+                        line-height: 18px;
+                        color: $secondary;
+                        span {
+                            color: $body-text;
+                            margin-left: 20px;
+                        }
+                    }
+                    .icon-close {
+                        margin-left: auto;
+                        cursor: pointer;
+                    }
+                    .icon-plus {
+                        margin-left: 15px;
+                        width: 29px;
+                        height: 29px;
+                    }
+                    textarea {
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: $secondary;
+                    }
+                    .upload-flex {
+                        display: flex;
+                        align-items: center;
+                        .file-upload-wrapper {
+                            margin-left: 20px;
+                            .file-upload {
+                                width: 360px !important;
+                                height: 60px !important;
+                                background-position: 35px center;
+                            }
+                            label {
+                                width: auto;
+                                font-size: 14px;
+                                line-height: 21px;
+                                margin-left: 84px !important;
+                            }
+                        }
+                    }
+                    .h-64 {
+                        height: 64px !important;
+                    }
+                    .h-158 {
+                        height: 158px !important;
+                        margin-top: 9px;
+                    }
+                    .w-680 {
+                        width: 680px;
+                    }
+                    .w-100 {
+                        width: 100%;
+                        margin-right: 20px;
+                    }
+                }
+                .link {
+                    font-size: 13px;
+                    line-height: 19px;
+                    font-weight: $w3;
+                    color: $primary;
+                    margin: 0 0 0 368px;
+                    width: fit-content;
+                }
+                .tag-area {
+                    margin: 13px 0 0 0;
+                }
+            }
+        }
+        .sub-heading {
+            margin-top: 76px;
+        }
+        .align-item-fs {
+            align-items: baseline;
+        }
+        .mb-0 {
+            margin-bottom: 0 !important;
+        }
+    }
+}
+.video-list {
+    .page-card {
+        padding: 0;
+        margin-bottom: 68px;
+        // Course list table
+        .table {
+            &.course-list {
+                width: 100%;
+                border-collapse: collapse;
+                thead {
+                    tr {
+                        height: 43px;
+                        border-bottom: 1px solid $page-card-border;
+                        th, td {
+                            font-size: 12px;
+                            line-height: 21px;
+                            font-weight: $w3;
+                            padding: 0 20px;
+                        }
+                        .icon-filter {
+                            display: inline-flex;
+                            align-items: center;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: $secondary;
+                            // cursor: pointer;
+                            img {
+                                margin: 0 17px 0 0;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        min-height: 125px;
+                        border-bottom: 1px solid $page-card-border;
+                        td {
+                            padding: 16px 10px;
+                            font-size: 12px;
+                            line-height: 24px;
+                            text-align: center;
+                            &:nth-child(1) {
+                                padding: 16px 30px;
+                                width: 160px;
+                            }
+                            &:nth-child(2) {
+                                width: 180px;
+                                img {
+                                    min-width: 167px;
+                                    max-width: 167px;
+                                    height: 93px;
+                                }
+                            }
+                            // &:nth-child(3) {
+                            //     padding: 16px 10px 16px 30px;
+                            //     text-align: left;
+                            //     min-width: 150px;
+                            // }
+                            &:nth-child(3) {
+                                border-right: 1px solid $page-card-border;
+                                .border-left {
+                                    border-left: 1px solid $page-card-border;
+                                    min-height: 93px;
+                                    padding-left: 45px;
+                                    padding-right: 35px;
+                                    padding-top: 20px;
+                                    p {
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        color: $black;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 2;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        text-align: left;
+                                        word-break: break-all;
+                                    }
+                                }
+                            }
+                            &:nth-child(4) {
+                                width: 150px;
+                                border-right: 1px solid $page-card-border;
+                                .btn-link {
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    font-weight: $w3;
+                                    color: $body-text;
+                                    width: 80px;
+                                    cursor: default;
+                                    img {
+                                        margin-right: 8px;
+                                    }
+                                }
+                            }
+                            &:nth-child(5) {
+                                width: 150px;
+                                .btn-dark {
+                                    width: 73px;
+                                    height: 30px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

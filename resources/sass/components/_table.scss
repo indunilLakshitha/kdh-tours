@@ -1,0 +1,44 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+        tr {
+            height: 43px;
+            border-bottom: 1px solid $page-card-border;
+            th, td {
+                font-size: 12px;
+                line-height: 21px;
+                font-weight: $w3;
+                padding: 0 20px;
+                .icon-sort {
+                    background: url('/public/images/icon-sort-down-arrow.svg') no-repeat;
+                    width: 8.2px;
+                    height: 4.1px;
+                    display: inline-block;
+                    margin-left: 15px;
+                    cursor: pointer;
+                }
+            }
+            .icon-filter {
+                display: inline-flex;
+                align-items: center;
+                font-size: 12px;
+                line-height: 16px;
+                color: $secondary;
+                // cursor: pointer;
+                img {
+                    margin: 0 17px 0 0;
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                padding: 16px 10px;
+                font-size: 12px;
+                line-height: 24px;
+            }
+        }
+    }
+}

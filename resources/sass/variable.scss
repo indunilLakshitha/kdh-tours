@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'hiragino_kaku_gothic_pronw3';
+    src: url('fonts/hiragino_kaku_gothic_pron_w3-webfont.woff2') format('woff2'),
+         url('fonts/hiragino_kaku_gothic_pron_w3-webfont.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'alluraregular';
+    src: url('fonts/allura-regular-webfont.woff2') format('woff2'),
+         url('fonts/allura-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+$hiragino: 'hiragino_kaku_gothic_pronw3';
+$popins: 'Poppins', sans-serif;
+
+$w3: 300;
+$w6: 600;
+
+// Colors
+$primary: #18B2A6;
+$body-bg: #ECF2F1;
+$body-text: #1C1C1C;
+$white: #fff;
+$black: #000;
+$black3: #333;
+$card-border: #D9D9D9;
+$pink: #FBDADA;
+$input-border: #CACACA;
+$footer-bg: #535B67;
+$footer-border: #A7212D;
+$secondary: #808080;
+$helper-text: #7C7C7C;
+$error-text: #C31B29;
+$step-color: #6E6E6E;
+$btn-link: #767676;
+$box-border: #707070;
+$input-disabled-bg: #EAEAEA;
+$seekbar-bg: #D6D6D6;
+$title-underline: #2A2A46;
+$gray: #F5F5F5;
+$text-gray: #5D5D5D;
+$widget-header: #121212;
+$blue: #012365;
+
+$admin-header-bg: #252645;
+$sidebar-border: #777F8E;
+$page-card-border: #CBCBCB;

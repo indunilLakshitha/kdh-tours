@@ -1,0 +1,673 @@
+.mypage {
+    margin: 104px 76px 109px auto !important;
+    .btn-link {
+        font-size: 14px;
+        font-weight: $w6;
+        line-height: normal;
+        color: $white;
+        background-color: $admin-header-bg;
+        border-radius: 100px;
+        padding: 10px 28px 9px 28px;
+        max-height: 36px;
+        display: table;
+        margin: 0 0 20px auto;
+    }
+    .page-container {
+        display: flex;
+        //  Section common styles
+        .two-column {
+            width: calc((100% - 75px) / 2);
+            &:nth-child(2) {
+                margin-left: auto;
+            }
+            section {
+                margin-bottom: 67px;
+                .title-area {
+                    margin-bottom: 11px;
+                    h3 {
+                        font-size: 26px;
+                        line-height: 29px;
+                        color: $widget-header;
+                    }
+                }
+                .card {
+                    width: 100%;
+                    border-radius: 0;
+                    border: 2px solid $page-card-border;
+                    box-shadow: unset;
+                }
+            }
+            // Section individual styles
+            .achievement-section {
+                position: relative;
+                margin-bottom: 107px;
+                .title-area {
+                    position: absolute;
+                    z-index: 2;
+                    left: 69px;
+                    top: -60px;
+                    .avatar {
+                        min-width: 142px;
+                        max-width: 142px;
+                        min-height: 142px;
+                        max-height: 142px;
+                        border-radius: 250px;
+                        box-shadow: 2px 3px 10px rgba($black, 0.16);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        overflow: hidden;
+                        border: 7px solid $white;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    h3 {
+                        margin-left: 21px;
+                        span {
+                            font-size: 22px;
+                            margin-left: 30px;
+                        }
+                    }
+                }
+                .card {
+                    background-color: $admin-header-bg;
+                    border: 2px solid $admin-header-bg;
+                    position: relative;
+                    z-index: 1;
+                    top: 40px;
+                    .card-content {
+                        padding: 49px 34px 50px 42px;
+                        display: flex;
+                        align-items: center;
+                        .left {
+                            min-width: 260px;
+                            width: 50%;
+                            max-width: 50%;
+                            margin-right: 54px;
+                            .row-area {
+                                .row-single {
+                                    width: 100%;
+                                    border-bottom: 1px solid $input-border;
+                                    padding-bottom: 7px;
+                                    margin-bottom: 7px;
+                                    display: flex;
+                                    align-items: center;
+                                    padding-right: 14px;
+                                    &:nth-child(1) {
+                                        padding-right: 0;
+                                    }
+                                    &:nth-last-child(1) {
+                                        border: unset;
+                                        padding-bottom: 0;
+                                        margin: 0;
+                                    }
+                                    .info {
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        color: $white;
+                                    }
+                                    .value {
+                                        font-family: $popins;
+                                        font-size: 40px;
+                                        line-height: 54px;
+                                        color: $white;
+                                        margin-left: auto;
+                                        small {
+                                            font-family: $hiragino;
+                                            font-size: 24px;
+                                            line-height: 36px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .right {
+                            width: 50%;
+                            height: 100%;
+                            .vue3-circular-progressbar {
+                                width: 100% !important;
+                                height: 100%;
+                                max-width: 300px;
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-family: $popins;
+                                margin-left: auto;
+                                &:after {
+                                    content: '受講状況';
+                                    position: absolute;
+                                    margin-top: -50px;
+                                    font-size: 20px;
+                                    font-weight: $w3;
+                                    color: $admin-header-bg;
+                                }
+                                .current-counter {
+                                    font-size: 58px;
+                                    font-weight: $w6;
+                                    color: $primary;
+                                    margin-top: 20px;
+                                    &:after {
+                                        content: '%';
+                                        font-size: 28px;
+                                        color: $admin-header-bg;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .user-settings-section {
+                .card {
+                    .card-content {
+                        padding: 39px 40px 0 36px;
+                        .row-area {
+                            .row-single {
+                                display: flex;
+                                padding: 0 0 19.5px 10px;
+                                margin: 0 0 20px 0;
+                                border-bottom: 1px solid $page-card-border;
+                                font-size: 16px;
+                                line-height: 24.5px;
+                                &:nth-last-child(1) {
+                                    border: 0;
+                                }
+                                .info {
+                                    display: inline-block;
+                                    min-width: 200px;
+                                    max-width: 200px;
+                                    margin-right: 27px;
+                                }
+                                .value {
+                                    width: calc(100% - 187px);
+                                    -webkit-line-clamp: 1;
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    display: -webkit-box;
+                                    word-break: break-word;
+                                    span {
+                                        color: $secondary;
+                                        margin-left: 35px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .attendance-section {
+                .card {
+                    background-color: $admin-header-bg;
+                    color: $white;
+                    .card-content {
+                        padding: 36px 53px 28px 32px;
+                        table {
+                            width: 100%;
+                            thead {
+                                td {
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    text-align: center;
+                                    width: 17%;
+                                    padding-bottom: 10px;
+                                    &:nth-child(1) {
+                                        width: 32%;
+                                    }
+                                }
+                            }
+                            tbody {
+                                tr {
+                                    height: 80px;
+                                    border-bottom: 1px solid $input-border;
+                                    &:nth-last-child(1) {
+                                        border: unset;
+                                    }
+                                    &.active {
+                                        border: 2px solid $primary;
+                                    }
+                                    td {
+                                        font-family: $popins;
+                                        font-size: 40px;
+                                        line-height: 60px;
+                                        text-align: center;
+                                        &:nth-child(1) {
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                            text-align: left;
+                                            padding-left: 18.5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.scroll {
+                        max-height: 394px;
+                        overflow-y: scroll;
+                        scrollbar-width: thin;
+                        scrollbar-color: $primary $admin-header-bg;
+                    }
+                }
+            }
+            .contract-section {
+                .card {
+                    .card-content {
+                        padding: 0;
+                        .row-area {
+                            .row-single {
+                                display: flex;
+                                align-items: center;
+                                min-height: 68px;
+                                padding: 0 28px 0 53px;
+                                border-bottom: 1px solid $page-card-border;
+                                font-size: 16px;
+                                line-height: 30px;
+                                .info {
+                                    min-width: 160px;
+                                    max-width: 160px;
+                                    margin-right: 15px;
+                                }
+                                .value {
+                                    display: flex;
+                                    width: -moz-available;
+                                    img {
+                                        display: inline;
+                                        margin-left: auto;
+                                        transition: 0.3s;
+                                        cursor: pointer;
+                                        &.down {
+                                            // 
+                                        }
+                                        &.right {
+                                            transform: rotate(-90deg);
+                                        }
+                                    }
+                                }
+                                .mid-value {
+                                    // width: 160px;
+                                    width: 120px;
+                                }
+                                .date-value {
+                                    margin-left: auto;
+                                    // width: 160px;
+                                    width: max-content;
+                                    .wrapper {
+                                        display: flex;
+                                        span {
+                                            font-size: 14px;
+                                            line-height: normal;
+                                            color: $black3;
+                                            &:nth-child(1) {
+                                                margin-right: 17px;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.gray-bg {
+                                    background-color: $input-disabled-bg;
+                                    padding: 24px 28px 28px 53px;
+                                    p {
+                                        width: calc(100% - 107px);
+                                    }
+                                    .date {
+                                        color: $secondary;
+                                        text-align: right;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .lecture-history-section {
+                .card {
+                    .card-content {
+                        padding: 0;
+                        .expand-area {
+                            .row-single {
+                                display: flex;
+                                align-items: center;
+                                min-height: 75px;
+                                padding: 0 28px 0 50px;
+                                border-bottom: 1px solid $page-card-border;
+                                font-size: 16px;
+                                line-height: 30px;
+                                cursor: pointer;
+                                .info {
+                                    min-width: 100px;
+                                    max-width: 100px;
+                                    margin-right: 26px;
+                                }
+                                .value {
+                                    display: flex;
+                                    width: -moz-available;
+                                    img {
+                                        display: inline;
+                                        margin-left: auto;
+                                        transition: 0.3s;
+                                        &.down {
+                                            transform: rotate(0deg);
+                                        }
+                                        &.up {
+                                            transform: rotate(180deg);
+                                        }
+                                    }
+                                }
+                                .mid-value {
+                                    width: 160px;
+                                }
+                            } 
+                            .expand-content {
+                                .single {
+                                    display: flex;
+                                    align-items: center;
+                                    height: 105px;
+                                    border-bottom: 1px solid $page-card-border;
+                                    padding-right: 27px;
+                                    .status {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        min-width: 78px;
+                                        max-width: 78px;
+                                        height: 100%;
+                                        background-color: $secondary;
+                                        font-size: 16px;
+                                        font-weight: $w6;
+                                        color: $white;
+                                        &.success {
+                                            background-color: $primary;
+                                        }
+                                    }
+                                    .info-column {
+                                        margin-left: 18px;
+                                        .date {
+                                            font-size: 14px;
+                                            line-height: 16px;
+                                            color: $secondary;
+                                        }
+                                        p {
+                                            margin: 8px 27px 0 0;
+                                            font-size: 20px;
+                                            color: $black;
+                                            display: -webkit-box;
+                                            -webkit-line-clamp: 1;
+                                            -webkit-box-orient: vertical;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                        }
+                                    }
+                                    .btn-secondary {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        min-width: 156px;
+                                        max-width: 156px;
+                                        height: 40px;
+                                        margin: 0 0 0 auto;
+                                        font-size: 16px;
+                                        font-weight: $w6;
+                                        img {
+                                            width: 17px;
+                                            height: 17px;
+                                            margin: 0 6px 0 0;
+                                        }
+                                    }
+                                    .btn-primary {
+                                        min-width: 156px;
+                                        max-width: 156px;
+                                        margin: 0 0 0 auto;
+                                        height: 40px;
+                                        font-size: 16px;
+                                        font-weight: $w6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive
+@media only screen and (max-width: 1680px) {
+    .mypage {
+        width: calc(100% - 300px) !important;
+        margin: 104px 20px 0 auto !important;
+        .page-container {
+            .two-column {
+                width: calc((100% - 40px) / 2);
+                section {
+                    .title-area {
+                        h3 {
+                            font-size: 22px;
+                        }
+                        .view-more {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .achievement-section {
+                    .card {
+                        .card-content {
+                            .left {
+                                min-width: inherit;
+                                width: 42%;
+                                margin-right: 5%;
+                            }
+                            .right {
+                                width: 53%;
+                            }
+                        }
+                    }
+                }
+                .user-settings-section {
+                    .card {
+                        .card-content {
+                            .row-area {
+                                .row-single {
+                                    .info {
+                                        min-width: 160px;
+                                        max-width: 160px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .attendance-section {
+                    .card {
+                        .card-content {
+                            table {
+                                thead {
+                                    td {
+                                        font-size: 11px;
+                                        width: 18%;
+                                        &:nth-child(1) {
+                                            width: 28%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .contract-section {
+                    .card {
+                        .card-content {
+                            .row-area {
+                                .row-single {
+                                    padding: 0 28px 0 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .mypage {
+        width: calc(100% - 230px) !important;
+        margin: 70px 20px 0 auto !important; // 109px
+        .page-container {
+            .two-column {
+                section {
+                    margin-bottom: 37px;
+                    .title-area {
+                        h3 {
+                            font-size: 18px;
+                        }
+                        .view-more {
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .achievement-section {
+                    margin-bottom: 77px;
+                    .title-area {
+                        top: -40px;
+                        .avatar {
+                            min-width: 110px;
+                            max-width: 110px;
+                            min-height: 110px;
+                            max-height: 110px;
+                            border: 5px solid #fff;
+                        }
+                    }
+                    .card {
+                        .card-content {
+                            padding: 32px 29px 30px 37px;
+                            .left {
+                                .row-area {
+                                    .row-single {
+                                        padding-bottom: 4px;
+                                        margin-bottom: 4px;
+                                        .info {
+                                            font-size: 13px;
+                                        }
+                                        .value {
+                                            font-size: 34px;
+                                            line-height: 40px;
+                                            small {
+                                                font-size: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .right {
+                                .vue3-circular-progressbar {
+                                    &:after {
+                                        font-size: 16px;
+                                    }
+                                    .current-counter {
+                                        font-size: 52px;
+                                        &:after {
+                                            font-size: 24px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .user-settings-section {
+                    .card {
+                        .card-content {
+                            padding: 24px 30px 4px 26px;
+                            .row-area {
+                                .row-single {
+                                    font-size: 14px;
+                                    padding: 0 0 12.5px 10px;
+                                    margin: 0 0 8px 0;
+                                    .info {
+                                        min-width: 140px;
+                                        max-width: 140px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .attendance-section {
+                    .card {
+                        .card-content {
+                            padding: 26px 28px 28px 28px;
+                            table {
+                                thead {
+                                    tr {
+                                        td {
+                                            font-size: 9.5px;
+                                        }
+                                    }
+                                }
+                                tbody {
+                                    tr {
+                                        height: 52px;
+                                        td {
+                                            font-size: 34px;
+                                            line-height: 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .contract-section {
+                    .card {
+                        .card-content {
+                            .row-area {
+                                .row-single {
+                                    padding: 0 18px 0 23px;
+                                    font-size: 14px;
+                                    min-height: 50px;
+                                    .info {
+                                        min-width: 132px;
+                                        max-width: 132px;
+                                        margin-right: 15px;
+                                    }
+                                    .date-value {
+                                        .wrapper {
+                                            span {
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .lecture-history-section {
+                    .card {
+                        .card-content {
+                            .expand-area {
+                                .row-single {
+                                    padding: 0 21px 0 24px;
+                                    font-size: 14px;
+                                    min-height: 52px;
+                                    .value{
+                                        margin-left: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn-link {
+            font-size: 13px;
+            padding: 7px 23px 6px 23px;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.btn {
+    width: 200px;
+    height: 65px;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: $w6;
+    display: block;
+    margin: 0 auto;
+    &[disabled] {
+        opacity: .5;
+    }
+    &.btn-primary {
+        background-color: $primary;
+        color: $white;
+    }
+    &.btn-secondary {
+        background-color: $secondary;
+        color: $white;
+    }
+    &.btn-secondary-outline {
+        background-color: $white;
+        border: 2px solid $secondary;
+        color: $secondary;
+        width: auto;
+        &.sml {
+            font-size: 14px;
+            max-height: 36px;
+            padding: 5px 20px 5px 21px;
+        }
+    }
+    &.btn-link {
+        background-color: unset;
+        font-size: 17px;
+        line-height: 27px;
+        color: $btn-link;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        img {
+            margin: 0 12px 0 0;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &.btn-light {
+        width: auto;
+        background-color: $white;
+        border-radius: 100px;
+        color: $admin-header-bg;
+        padding: 0 15px;
+        &.sml {
+            font-size: 12px;
+            line-height: 12px;
+            height: 33px;
+        }
+    }
+    &.btn-dark {
+        background-color: $admin-header-bg;
+        color: $white;
+    }
+    &.btn-category {
+        min-width: 189px;
+        width: auto;
+        height: 38px;
+        background-color: $white;
+        border: 1px solid $page-card-border;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: $w3;
+        color: $admin-header-bg;
+        padding: 5px 20px;
+    }
+}
+.search-form {
+    .btn-primary {
+        width: 123px;
+        height: 30px;
+        font-size: 12px;
+        margin: 0 0 0 13px;
+    }
+    .btn-secondary {
+        width: 123px;
+        height: 30px;
+        font-size: 12px;
+        margin: 0 0 0 13px;
+    }
+    .btn-dark {
+        width: 123px;
+        height: 30px;
+        font-size: 12px;
+        margin: 0 0 0 13px;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .btn {
+        width: 200px;
+        height: 50px;
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .btn {
+        width: 200px;
+        height: 50px;
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .btn {
+        height: 44px;
+        font-size: 16px;
+    }
+}
