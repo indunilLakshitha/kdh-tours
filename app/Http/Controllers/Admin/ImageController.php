@@ -17,7 +17,8 @@ class ImageController extends Controller
 
         $image = new UploadImage();
         $image->file = $url;
-        $image->url = config('variables.doc_images_root_path') . $url;
+        $image->url = env('APP_URL').'/storage/app/public/images/document/' . $url;
+        // $image->url = config('variables.doc_images_root_path') . $url;
         $image->save();
 
         return response()->json(['url' => $image->url, 'image_id' => $image->id]);
