@@ -2,14 +2,18 @@
 
 use App\Http\Controllers\Admin\AdminAuthController;
 use App\Http\Controllers\Admin\CourseCategoryController;
-use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\CourseVideosController;
+use App\Http\Controllers\Admin\ImageController as AdminImageController;
 use App\Http\Controllers\Admin\LearningPathController;
 use App\Http\Controllers\Admin\NoticeController;
 use App\Http\Controllers\Admin\TestController;
 use App\Http\Controllers\Admin\LicenceController;
 use App\Http\Controllers\Admin\WorkshopController;
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\Section\HowItController;
+use App\Http\Controllers\Section\QnAController;
+use App\Http\Controllers\Section\TopCountController;
+use App\Models\Section\HowItWork;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -33,15 +37,6 @@ Route::middleware('auth:admin_users', 'check_admin_ip')->group(function () {
 
     Route::get('/dashboard', [AdminAuthController::class, 'dashboard'])->name('admin.dashboard');
 
-    Route::group(['prefix' => 'course'], function () {
-        Route::get('/', [CourseController::class, 'index'])->name('course.index');
-        Route::get('/create', [CourseController::class, 'create'])->name('course.create');
-        Route::post('/store', [CourseController::class, 'store'])->name('course.store');
-        Route::get('/{id}/edit', [CourseController::class, 'edit'])->name('course.edit');
-        Route::post('/update', [CourseController::class, 'update'])->name('course.update');
-        Route::post('/document', [CourseController::class, 'documentUpolad'])->name('course.documentUpolad');
-    });
-
     Route::group(['prefix' => '/categories'], function () {
         Route::group(['prefix' => '/course'], function () {
             Route::post('/', [CourseCategoryController::class, 'store'])->name('course.category.store');
@@ -56,16 +51,33 @@ Route::middleware('auth:admin_users', 'check_admin_ip')->group(function () {
         Route::post('/update', [CourseVideosController::class, 'update'])->name('video.update');
     });
 
-    Route::post('/images', [ImageController::class, 'upload'])->name('image.upload');
+    Route::post('/image', [AdminImageController::class, 'upload'])->name('image.upload');
 
-    Route::group(['prefix' => 'notice'], function () {
-        Route::get('/', [NoticeController::class, 'index'])->name('admin.notice.index');
-        Route::get('/create', [NoticeController::class, 'create'])->name('admin.notice.create');
-        Route::post('/store', [NoticeController::class, 'store'])->name('admin.notice.store');
-        Route::get('/{id}/edit', [NoticeController::class, 'edit'])->name('admin.notice.edit');
-        Route::post('/update', [NoticeController::class, 'update'])->name('admin.notice.update');
-        Route::post('/delete', [NoticeController::class, 'deleteNotices'])->name('admin.notice.deleteNotices');
-        Route::post('/category', [NoticeController::class, 'categoryStore'])->name('admin.notice.categoryStore');
+    Route::group(['prefix' => 'qna'], function () {
+        Route::get('/', [QnAController::class, 'index'])->name('admin.qna.index');
+        Route::get('/create', [QnAController::class, 'create'])->name('admin.qna.create');
+        Route::post('/store', [QnAController::class, 'store'])->name('admin.qna.store');
+        Route::get('/{id}/edit', [QnAController::class, 'edit'])->name('admin.qna.edit');
+        Route::post('/update', [QnAController::class, 'update'])->name('admin.qna.update');
+        Route::post('/delete', [QnAController::class, 'deleteNotices'])->name('admin.qna.deleteNotices');
+    });
+
+    Route::group(['prefix' => 'how'], function () {
+        Route::get('/', [HowItController::class, 'index'])->name('admin.how.index');
+        Route::get('/create', [HowItController::class, 'create'])->name('admin.how.create');
+        Route::post('/store', [HowItController::class, 'store'])->name('admin.how.store');
+        Route::get('/{id}/edit', [HowItController::class, 'edit'])->name('admin.how.edit');
+        Route::post('/update', [HowItController::class, 'update'])->name('admin.how.update');
+        Route::post('/delete', [HowItController::class, 'deleteNotices'])->name('admin.how.deleteNotices');
+    });
+
+    Route::group(['prefix' => 'top'], function () {
+        Route::get('/', [TopCountController::class, 'index'])->name('admin.top.index');
+        Route::get('/create', [TopCountController::class, 'create'])->name('admin.top.create');
+        Route::post('/store', [TopCountController::class, 'store'])->name('admin.top.store');
+        Route::get('/{id}/edit', [TopCountController::class, 'edit'])->name('admin.top.edit');
+        Route::post('/update', [TopCountController::class, 'update'])->name('admin.top.update');
+        Route::post('/delete', [TopCountController::class, 'deleteNotices'])->name('admin.top.deleteNotices');
     });
 
     Route::group(['prefix' => 'workshop'], function () {

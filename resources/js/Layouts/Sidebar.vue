@@ -1,34 +1,8 @@
 <template>
   <ul class="sidebar">
-    <li>
-      <Link href="/admin/dashboard">TOP</Link>
+    <li v-for="(menu, index) in side_menu" :key="index">
+      <Link :href="menu.url">{{ menu.name }}</Link>
       <!-- <Link href="/admin/dashboard">TOP</Link> -->
-    </li>
-    <li>
-      <Link href="/admin/learning-path">ラーニングパス</Link>
-    </li>
-    <li>
-      <a href="/admin/licence-keys">ライセンスキー管理</a>
-    </li>
-    <li class="">
-      <Link href="/admin/course">講座管理</Link>
-    </li>
-    <!-- <li class="active">
-      <Link  href="">講座管理</Link >
-    </li> -->
-    <li>
-       <Link href="/admin/video">動画管理</Link>
-    </li>
-    <li>
-       <Link href="/admin/workshop/">ワークショップ管理</Link>
-      <!-- <a href="">ワークショップ管理</a> -->
-    </li>
-    <li>
-      <Link href="/admin/notice">お知らせ</Link>
-    </li>
-    <li>
-      <!-- <Link href="/admin/logout">利用状況（ログ）</Link> -->
-      <a href="" >利用状況（ログ）</a>
     </li>
   </ul>
 </template>
@@ -38,16 +12,41 @@ import { Link } from "@inertiajs/inertia-vue3";
 
 export default {
   components: {
-    Link
+    Link,
   },
-  setup() {
-
-
-    // function logoutAdmin() {
-    //   Inertia.get(route("admin.logout"));
-    // }
-
-    // return { form, logoutAdmin };
+  data() {
+    return {
+      side_menu: [
+        {
+          name: "Q n A Sec",
+          url: "/admin/qna",
+        },
+        {
+          name: "How It Works Sec",
+          url: "/admin/how",
+        },
+        {
+          name: "Top Count Sec",
+          url: "/admin/top",
+        },
+        {
+          name: "Why Us Sec",
+          url: "",
+        },
+        {
+          name: "Destinations",
+          url: "",
+        },
+        {
+          name: "Gallery",
+          url: "",
+        },
+        {
+          name: "Reviews",
+          url: "",
+        },
+      ],
+    };
   },
 };
 </script>
