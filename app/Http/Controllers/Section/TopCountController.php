@@ -14,7 +14,7 @@ class TopCountController extends Controller
 {
     public function index()
     {
-        $top = TopCount::first();
+        $top = TopCount::with('file')->first();
 
         return Inertia::render('Admin/TOPCOUNT/List', compact('top'));
     }

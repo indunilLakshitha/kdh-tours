@@ -34,7 +34,7 @@
                     {{ formatdate(course.created_at) }}
                   </td>
                   <td>
-                    <img :src="course.image_1" alt="" />
+                    <img :src="course.img_1" alt="" />
                   </td>
                   
                   <td>

@@ -29,7 +29,7 @@
               <tbody>
                 <tr>
                   <td>{{ formatdate(top.updated_at) }}</td>
-                  <td><img :src="top.image" alt="" /></td>
+                  <td><img :src="top.file.url" alt="" /></td>
                   <td>
                     <p>
                       {{ top.description_1 }}

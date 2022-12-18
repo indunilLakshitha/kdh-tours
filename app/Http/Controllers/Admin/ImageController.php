@@ -13,14 +13,17 @@ class ImageController extends Controller
 
     public function upload(Request $request)
     {
-        $url = $this->uploadImage($request, 'image', config('variables.doc_images_root_path'));
+        $res = $this->uploadImage($request, 'image');
 
         $image = new UploadImage();
-        $image->file = $url;
-        $image->url = env('APP_URL').'/storage/app/public/images/document/' . $url;
+        $image->file = $res['file'];
+        $url = env('APP_URL').'/storage/app/images/'.$image->file;
+        $image->url = $url;
         // $image->url = config('variables.doc_images_root_path') . $url;
         $image->save();
+        
 
-        return response()->json(['url' => $image->url, 'image_id' => $image->id]);
+        // return response()->json(['url' => '/'.'app'.$image->url, 'file' => $image->file, 'image_id' => $image->id]);
+        return response()->json(['url' => $url, 'file' => $image->file, 'image_id' => $image->id]);
     }
 }
